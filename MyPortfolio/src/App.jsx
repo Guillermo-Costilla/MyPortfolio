@@ -1,10 +1,9 @@
-import About from "./components/About.jsx";
-import Contact from "./components/Contact.jsx";
 import Nav from "./components/NavBar.jsx";
 import Perfil from './components/Perfil.jsx'
 import Skills from './components/Skills.jsx';
 import Works from "./components/Wordks.jsx";
-
+import About from "./components/About.jsx";
+import Contact from "./components/Contact.jsx";
 
 
 function App() {
