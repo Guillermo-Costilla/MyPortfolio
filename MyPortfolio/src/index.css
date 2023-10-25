@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background: linear-gradient(to bottom, black, rgb(3 7 18), black);
+  width: 100%;
+  height: 100%;
+}
