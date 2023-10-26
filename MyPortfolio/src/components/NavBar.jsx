@@ -46,7 +46,7 @@ export default function Nav() {
     return (
         <Navbar className="bg-inherit w-full">
             <NavbarContent className="sm:hidden bg-inherit" justify="start">
-                <NavbarMenuToggle />
+                <NavbarMenuToggle className='text-sky-400' />
             </NavbarContent>
 
             <NavbarContent className="sm:hidden ml-14 md:ml-0 md:pl-20 sm:pl-1 md:pr-3 w-full bg-inherit" justify="center">
