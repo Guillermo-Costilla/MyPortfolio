@@ -10,3 +10,12 @@ html {
   height: 100%;
   font-family: "Lato", cursive;
 }
+
+html::-webkit-scrollbar {
+  width: 7px;
+  background: linear-gradient(to bottom, black, rgb(3 7 18), black) ;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(14 165 233);
+}
