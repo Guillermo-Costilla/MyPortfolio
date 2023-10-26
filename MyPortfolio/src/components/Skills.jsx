@@ -6,6 +6,7 @@ import node from '../assets/nodejs.png.png'
 import redux from '../assets/redux.png.png'
 import mongo from '../assets/mongodb.png.png'
 import git from '../assets/github.png'
+import 'animate.css'
 
 const Skills = () => {
 
@@ -60,7 +61,7 @@ const Skills = () => {
         },
     ];
     return (
-        <div name="experience" className="w-full flex flex-col justify-center items-center">
+        <div name="experience" className="w-full flex flex-col justify-center items-center animate__bounceInDown">
             <div className="mx-auto p-4 flex flex-col justify-center items-center w-4/5">
 
                 <div className="py-20 flex-none">

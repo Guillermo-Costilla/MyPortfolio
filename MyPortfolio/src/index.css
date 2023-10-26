@@ -13,9 +13,32 @@ html {
 
 html::-webkit-scrollbar {
   width: 7px;
-  background: linear-gradient(to bottom, black, rgb(3 7 18), black) ;
+  background: linear-gradient(to bottom, black, rgb(3 7 18), black);
 }
 
 html::-webkit-scrollbar-thumb {
   background: rgb(14 165 233);
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+img {
+  view-timeline: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
 }
