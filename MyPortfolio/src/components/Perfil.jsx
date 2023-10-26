@@ -10,9 +10,9 @@ const Perfil = () => {
             </div>
             <div className='w-full px-5 md:px-0 md:w-4/6 flex flex-col flex-1'>
                 <div className='w-full flex justify-start items-start mb-5'>
-                    <h1 className='text-left text-blue-600 text-3xl font-bold font-serif cursor-pointer max-w-[600px]'>Hi, I'm Guillermo Costilla,<span className='text-amber-500 font-permanent-marker'> Full Stack </span> developer, some of my qualities are:</h1>
+                    <h1 className='text-left text-gray-100 text-3xl font-bold px-1 cursor-pointer max-w-[600px]'>Hi, I'm Guillermo Costilla,<span className='text-sky-500 font-permanent-marker'> Full Stack </span> developer, some of my qualities are:</h1>
                 </div>
-                <div className='w-full min-h-[50px] mr-20 md:mr-0 flex justify-start items-start '>
+                <div className='w-full min-h-[50px] mr-20 md:mr-0 px-1 flex justify-start items-start '>
                     <Qualities />
                 </div>
             </div>

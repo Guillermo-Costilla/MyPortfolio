@@ -64,7 +64,7 @@ const Skills = () => {
             <div className="mx-auto p-4 flex flex-col justify-center items-center w-4/5">
 
                 <div className="py-20 flex-none">
-                    <p className="text-4xl font-bold inline border-b-4 border-amber-500 text-blue-600">
+                    <p className="text-4xl font-bold inline border-b-4 border-gray-100 text-sky-500">
                         Experience:
                     </p>
                 </div>
@@ -73,7 +73,7 @@ const Skills = () => {
                     {techs.map(({ id, src, title, style }) => (
                         <div key={id} className={`shadow-md hover:scale-110 duration-300 py-2 rounded-lg w-full ${style}`}>
                             <img src={src} alt="" className="w-20 mx-auto" />
-                            <p className="mt-4 text-blue-600 font-bold">{title}</p>
+                            <p className="mt-4 text-sky-500 font-bold">{title}</p>
                         </div>
                     ))}
                 </div>
