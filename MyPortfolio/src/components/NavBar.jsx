@@ -1,5 +1,5 @@
 import '../styles/perfil.css'
-import cv from '../assets/CostillaGuillermo.pdf'
+import cv from '../assets/CostillaGuillermo2023.pdf'
 import { Navbar, NavbarMenu, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuItem, NavbarMenuToggle, Link } from "@nextui-org/react";
 
 export default function Nav() {
@@ -32,7 +32,7 @@ export default function Nav() {
         {
             title: "Curriculum Vitae",
             href: cv, // Usamos la variable que contiene el enlace al archivo PDF
-            download: "CostillaGuillermo.pdf", // Nombre del archivo a descargar
+            download: "CostillaGuillermo2023.pdf", // Nombre del archivo a descargar
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#00abfb" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -91,7 +91,7 @@ export default function Nav() {
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link className="font-bold text-gray-100 hover:text-sky-700" href={cv} download={"CostillaGuillermo.pdf"} target="_blank" rel="noopener noreferrer">
+                    <Link className="font-bold text-gray-100 hover:text-sky-700" href={cv} download={"CostillaGuillermo2023.pdf"} target="_blank" rel="noopener noreferrer">
                         Cv<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-cv" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#00abfb" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M14 3v4a1 1 0 0 0 1 1h4" />
