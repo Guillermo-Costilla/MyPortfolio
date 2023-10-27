@@ -1,10 +1,11 @@
 import '../styles/perfil.css'
+import 'animate.css';
 import perfil from '../assets/perfil.png.png'
 import Qualities from './Qualities.jsx'
 
 const Perfil = () => {
     return (
-        <div className='w-full md:flex flex-1 justify-center items-center mt-10'>
+        <div className='w-full md:flex flex-1 justify-center items-center mt-10 animate__animated animate__fadeIn animate__delay-0.5s animate__duration-1s'>
             <div className='w-full md:w-4/12 md:mx-10 flex justify-center md:justify-end mb-10 md:mb-0'>
                 <img className='w-52 h-52 md:w-[300px] md:h-[300px] mt-5 rounded-full' src={perfil} alt="GC" />
             </div>

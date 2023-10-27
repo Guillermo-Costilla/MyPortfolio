@@ -1,6 +1,7 @@
 import mytinerary from '../assets/Mitinerary.png'
 import portfolio from '../assets/portfolio.webp'
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
+import 'animate.css';
 
 const Wordks = () => {
 
@@ -22,13 +23,13 @@ const Wordks = () => {
     ]
 
     return (
-        <div className='w-3/4 md:w-1/2 mt-20 mx-auto'>
+        <div className='w-3/4 md:w-1/2 mt-20 mx-auto '>
             <div className='w-full flex flex-col justify-center items-center'>
-                <h2 className='text-sky-500 font-bold text-3xl text-center border-b-4 border-gray-100'>My Works:</h2>
+                <h2 className='text-sky-500 font-bold text-3xl text-center border-b-4 border-gray-100 animate__animated animate__fadeIn'>My Works:</h2>
             </div>
             <div className='w-full mt-20 md:flex flex-1 justify-center'>
                 {works.map(({ id, src, title, link1, link2 }) => (
-                    <div className='w-full flex flex1-1 justify-center shadow-md hover:scale-110 duration-300 py-4' key={id}>
+                    <div className='w-full flex flex1-1 justify-center shadow-md hover:scale-110 duration-300 py-4 animate__animated animate__fadeIn' key={id}>
                         <Card
                             isFooterBlurred
                             radius="lg"

@@ -61,7 +61,7 @@ const Skills = () => {
         },
     ];
     return (
-        <div name="experience" className="w-full flex flex-col justify-center items-center animate__bounceInDown">
+        <div name="experience" className="w-full flex flex-col justify-center items-center animate__animated animate__fadeIn animate__delay-0.5s animate__duration-1s">
             <div className="mx-auto p-4 flex flex-col justify-center items-center w-4/5">
 
                 <div className="py-20 flex-none">
