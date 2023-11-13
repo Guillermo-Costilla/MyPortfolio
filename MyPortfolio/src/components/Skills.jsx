@@ -6,6 +6,10 @@ import node from '../assets/nodejs.png.png'
 import redux from '../assets/redux.png.png'
 import mongo from '../assets/mongodb.png.png'
 import git from '../assets/github.png'
+import tailwind from '../assets/tailwind.png'
+import sql from '../assets/sql.png'
+import mysql from '../assets/mysql.png'
+import sqlserver from '../assets/sqlserver.png'
 import 'animate.css'
 
 const Skills = () => {
@@ -59,6 +63,38 @@ const Skills = () => {
             title: "Redux",
             style: "shadow-violet-500",
         },
+        {
+            id: 10,
+            src: tailwind,
+            title: "Tailwind",
+            style: "shadow-sky-500",
+            width: 130,
+            height: 100
+        },
+        {
+            id: 11,
+            src: sql,
+            title: "SQL(in progress)",
+            style: "shadow-blue-500",
+            width: 130,
+            height: 100
+        },
+        {
+            id: 12,
+            src: mysql,
+            title: "My SQL(in progress)",
+            style: "shadow-orange-500",
+            width: 130,
+            height: 100
+        },
+        {
+            id: 13,
+            src: sqlserver,
+            title: "SQL Server(in progress)",
+            style: "shadow-white",
+            width: 120,
+            height: 100
+        },
     ];
     return (
         <div name="experience" className="w-full flex flex-col justify-center items-center animate__animated animate__fadeIn animate__delay-0.5s animate__duration-1s">
@@ -71,9 +107,9 @@ const Skills = () => {
                 </div>
 
                 <div className="w-full grid grid-cols-2 justify-items-center sm:grid-cols-4 gap-8 text-center sm:px-0">
-                    {techs.map(({ id, src, title, style }) => (
+                    {techs.map(({ id, src, title, style, width, height }) => (
                         <div key={id} className={`shadow-md hover:scale-110 duration-300 py-2 rounded-lg w-full ${style}`}>
-                            <img src={src} alt="" className="w-20 mx-auto" />
+                            <img src={src} alt="" className="w-20 mx-auto" style={{ width, height }} />
                             <p className="mt-4 text-sky-500 font-bold">{title}</p>
                         </div>
                     ))}
