@@ -68,7 +68,7 @@ const Skills = () => {
             src: tailwind,
             title: "Tailwind",
             style: "shadow-sky-500",
-            width: 130,
+            width: 100,
             height: 100
         },
         {
@@ -76,7 +76,7 @@ const Skills = () => {
             src: sql,
             title: "SQL(in progress)",
             style: "shadow-blue-500",
-            width: 130,
+            width: 100,
             height: 100
         },
         {
