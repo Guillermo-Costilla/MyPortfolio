@@ -7,9 +7,6 @@ import redux from '../assets/redux.png.png'
 import mongo from '../assets/mongodb.png.png'
 import git from '../assets/github.png'
 import tailwind from '../assets/tailwind.png'
-import sql from '../assets/sql.png'
-import mysql from '../assets/mysql.png'
-import sqlserver from '../assets/sqlserver.png'
 import 'animate.css'
 
 const Skills = () => {
@@ -71,30 +68,7 @@ const Skills = () => {
             width: 100,
             height: 100
         },
-        {
-            id: 11,
-            src: sql,
-            title: "SQL(in progress)",
-            style: "shadow-blue-500",
-            width: 100,
-            height: 100
-        },
-        {
-            id: 12,
-            src: mysql,
-            title: "My SQL(in progress)",
-            style: "shadow-orange-500",
-            width: 130,
-            height: 100
-        },
-        {
-            id: 13,
-            src: sqlserver,
-            title: "SQL Server(in progress)",
-            style: "shadow-white",
-            width: 120,
-            height: 100
-        },
+
     ];
     return (
         <div name="experience" className="w-full flex flex-col justify-center items-center animate__animated animate__fadeIn animate__delay-0.5s animate__duration-1s">
