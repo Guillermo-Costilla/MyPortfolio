@@ -54,16 +54,16 @@ const Contact = () => {
             <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
                 <div className="py-8 w-full ">
                     <div className="text-center">
-                        <h2 className="text-4xl mx-auto font-bold inline text-sky-500 border-b-4 border-gray-100 w-full text-center">Contact me:</h2>
+                        <h2 className="text-4xl mx-auto font-bold inline text-sky-500 border-b-4 border-gray-100 w-full text-center">Contactame:</h2>
                     </div>
-                    <p className="py-6 text-sky-500 text-xl">Submit the form below to get in touch with me</p>
+                    <p className="py-6 text-sky-500 text-xl">Completa el siguiente formulario para que podamos ponernos en contacto:</p>
                 </div>
                 <div className="flex justify-center items-center">
                     <form onSubmit={handleSubmit} className=" flex flex-col w-full md:w-1/2">
                         <input
                             type="text"
                             name="name"
-                            placeholder="Enter your name"
+                            placeholder="Tu nombre"
                             className="p-2 bg-transparent border-2 border-sky-500 rounded-md text-blue-600 focus:outline-none"
                             required
                             value={formData.name}
@@ -72,7 +72,7 @@ const Contact = () => {
                         <input
                             type="text"
                             name="email"
-                            placeholder="Enter your mail"
+                            placeholder="Tu mail"
                             className=" my-4 p-2 bg-transparent border-2 border-sky-500 rounded-md text-blue-600 focus:outline-none"
                             required
                             value={formData.email}
@@ -83,11 +83,11 @@ const Contact = () => {
                             rows="10"
                             className="p-2 bg-transparent border-2 border-sky-500 rounded-md text-blue-600 focus:outline-none"
                             required
-                            placeholder="Enter your message"
+                            placeholder="Mensaje..."
                             value={formData.message}
                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         ></textarea>
-                        <button type="submit" className="text-white bg-sky-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300 animate__animated animate__pulse animate__infinite">Let's talk</button>
+                        <button type="submit" className="text-white bg-sky-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300 animate__animated animate__pulse animate__infinite">Enviar</button>
                     </form>
                 </div>
             </div>

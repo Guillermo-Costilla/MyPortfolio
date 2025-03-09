@@ -54,7 +54,10 @@ const Qualities = () => {
         }
     };
     return (
-        <span className='wrap typewrite font-bold font-permanent-marker text-left text-3xl ml-1 w-full text-sky-500' data-period="2000" data-type='[ "multipurpose.", " Creative.", "Proactive." ," Dynamic.", "Designer", " Versatile."]'></span>
+        <span className='wrap typewrite font-bold font-permanent-marker text-left text-3xl ml-1 w-full text-sky-500'
+            data-period="2000"
+            data-type='[ "Resolutivo", "Creativo", "Proactivo", "Dinámico", "Colaborativo", "Versátil", "Analítico" ]'>
+        </span>
     )
 }
 

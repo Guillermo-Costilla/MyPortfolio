@@ -1,7 +1,9 @@
 import mytinerary from '../assets/Mitinerary.png'
-import portfolio from '../assets/portfolio.webp'
-import { Card, CardFooter, Image, Button } from "@nextui-org/react";
+import store from '../assets/store.png'
 import 'animate.css';
+import 'atropos/css'
+import '../styles/wordks.css'
+import Atropos from 'atropos/react';
 
 const Wordks = () => {
 
@@ -15,42 +17,32 @@ const Wordks = () => {
         },
         {
             id: 2,
-            title: "Portfolio",
-            src: portfolio,
-            link1: "#",
-            link2: "https://github.com/Guillermo-Costilla/MyPortfolio.git"
+            title: "Store Market",
+            src: store,
+            link1: "https://store-mk.vercel.app/",
+            link2: "https://github.com/Guillermo-Costilla/front-store"
         }
     ]
 
     return (
-        <div className='w-3/4 md:w-1/2 mt-20 mx-auto '>
+        <div className='w-full mt-20 mx-auto flex flex-col items-center'>
             <div className='w-full flex flex-col justify-center items-center'>
-                <h2 className='text-sky-500 font-bold text-3xl text-center border-b-4 border-gray-100 animate__animated animate__fadeIn'>My Works:</h2>
+                <h2 className='text-sky-500 hover:text-white font-bold text-3xl text-center border-b-4 border-gray-100 hover:border-sky-500 transition duration-300 animate__animated animate__fadeIn'>Mis Proyectos:</h2>
             </div>
-            <div className='w-full mt-20 md:flex flex-1 justify-center'>
+            <div className='w-full mt-20 flex flex-wrap justify-center items-center rounded-lg'>
                 {works.map(({ id, src, title, link1, link2 }) => (
-                    <div className='w-full flex flex1-1 justify-center shadow-md hover:scale-110 duration-300 py-4 animate__animated animate__fadeIn' key={id}>
-                        <Card
-                            isFooterBlurred
-                            radius="lg"
-                            className="border-none"
-                        >
-                            <Image
-                                alt="mytinerary"
-                                className="w-[300px] h-[300px] bg-cover objet-cover"
-                                src={src}
-                            />
-                            <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-                                <p className="text-tiny text-white/80 text-sky-500 font-bold">{title}</p>
-                                <Button className="text-tiny text-sky-500 bg-black/20 shadow-md hover:scale-110 duration-300" variant="flat" color="default" radius="lg" size="sm">
-                                    <a href={link1} target='_blank'>Demo</a>
-                                </Button>
-                                <Button className="text-tiny text-sky-500 bg-black/20 shadow-md hover:scale-110 duration-300" variant="flat" color="default" radius="lg" size="sm">
-                                    <a href={link2} target='_blank'>Code</a>
-                                </Button>
-                            </CardFooter>
-                        </Card>
-                    </div>))}
+                    <Atropos className="my-atropos" key={id}>
+                        <div className='flex flex-col justify-center rounded-lg shadow-md m-4 p-4 w-full sm:w-[300px]' key={id}>
+                            <h1 className='text-center text-white hover:text-sky-500 transition duration-300 text-2xl mb-4'>{title}</h1>
+                            <div className='hover:scale-110 duration-300 py-4 rounded-lg animate__animated animate__fadeIn'>
+                                <img src={src} alt={title} className="w-full h-[300px] object-cover rounded-lg" />
+                            </div>
+                            <div className='flex justify-between mt-4 gap-2'>
+                                <a href={link1} className='button' target="_blank" rel="noopener noreferrer">Demo</a>
+                                <a href={link2} className='button' target="_blank" rel="noopener noreferrer">Repositorio</a>
+                            </div>
+                        </div>
+                    </Atropos>))}
             </div>
         </div>
     )

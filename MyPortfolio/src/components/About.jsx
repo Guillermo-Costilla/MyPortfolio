@@ -1,3 +1,5 @@
+import 'animate.css';
+
 const About = () => {
     return (
         <div
@@ -6,13 +8,13 @@ const About = () => {
         >
             <div className="max-w-screen-lg p-4 mx-auto">
                 <div className="pb-2 w-full text-center">
-                    <p className="text-4xl font-bold inline border-b-4 border-gray-100 text-center w-full">
-                        About me:
+                    <p className="text-4xl font-bold inline border-b-4 border-gray-100 text-center w-full animate_animated animate__backInUp">
+                        Sobre mi:
                     </p>
                 </div>
 
                 <p className="text-2xl mt-20 px-1">
-                    Worked on a wide variety of projects, from small tasks to highly complex challenges, either collaborating in teams or taking individual responsibility. Throughout my journey, I have honed my ability to communicate clearly and effectively, manage project time efficiently, and share creative ideas. I am used to making quick and analytical decisions, which allows me to approach challenging situations with confidence and determination.
+                    Trabaje en una amplia variedad de proyectos, desde pequeñas tareas hasta desafíos muy complejos, tanto en equipo como de manera individual. A lo largo de mi trayectoria, perfeccione mis habilidades de comunicación clara y eficaz, gestión eficiente del tiempo y generación de ideas creativas. Estoy acostumbrado a tomar decisiones rápidas y analíticas, lo que me permite enfrentar situaciones desafiantes con confianza y determinación.
                 </p>
             </div>
         </div>

@@ -4,6 +4,7 @@ import Skills from './components/Skills.jsx';
 import Works from "./components/Wordks.jsx";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
+import 'atropos/css'
 
 
 function App() {

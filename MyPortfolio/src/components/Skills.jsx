@@ -7,6 +7,7 @@ import redux from '../assets/redux.png.png'
 import mongo from '../assets/mongodb.png.png'
 import git from '../assets/github.png'
 import tailwind from '../assets/tailwind.png'
+import zustand from '../assets/zustand.png'
 import 'animate.css'
 
 const Skills = () => {
@@ -68,6 +69,14 @@ const Skills = () => {
             width: 100,
             height: 100
         },
+        {
+            id: 11,
+            src: zustand,
+            title: "Zustand",
+            style: "shadow-orange-500",
+            width: 150,
+            height: 100
+        },
 
     ];
     return (
@@ -76,7 +85,7 @@ const Skills = () => {
 
                 <div className="py-20 flex-none">
                     <p className="text-4xl font-bold inline border-b-4 border-gray-100 text-sky-500">
-                        Experience:
+                        Experiencia:
                     </p>
                 </div>
 
