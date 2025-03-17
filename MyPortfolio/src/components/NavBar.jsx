@@ -1,5 +1,5 @@
 import '../styles/perfil.css'
-import cv from '../assets/CostillaGuillermo2023.pdf'
+import cv from '../assets/CostillaGuillermo.pdf'
 import 'animate.css'
 import { Navbar, NavbarMenu, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuItem, NavbarMenuToggle, Link } from "@nextui-org/react";
 
@@ -33,7 +33,7 @@ export default function Nav() {
         {
             title: "CV",
             href: cv,
-            download: "CostillaGuillermo2023.pdf",
+            download: "CostillaGuillermo.pdf",
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user" width="30" height="30" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#00abfb" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
